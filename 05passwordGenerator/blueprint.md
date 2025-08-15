@@ -1,9 +1,7 @@
 
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-password-generator-react--typescript)
-
-# ➤ 🔐 Password Generator (React + TypeScript)
+````markdown
+# 🔐 Password Generator (React + TypeScript)
 
 A simple, responsive password generator built using **React**, **TypeScript**, and **Tailwind CSS**.  
 It allows users to generate random passwords with configurable length, numbers, and special characters.  
@@ -11,10 +9,7 @@ Includes a **copy-to-clipboard** feature for convenience.
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-features)
-
-## ➤ 🚀 Features
+## 🚀 Features
 - Set password length (6–50 characters)
 - Include/exclude **numbers** and **special characters**
 - Responsive, clean UI with Tailwind styling
@@ -23,17 +18,14 @@ Includes a **copy-to-clipboard** feature for convenience.
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-react-concepts-used)
-
-## ➤ 🛠 React Concepts Used
+## 🛠 React Concepts Used
 
 ### 1. **useState**
 - Stores component state (length, password, booleans for numbers/characters, copy status).
 - Example:
   ```ts
   const [length, setLength] = useState(12);
-
+````
 
 * **When to use:** Track and update values that change over time within a component.
 
@@ -79,10 +71,7 @@ Includes a **copy-to-clipboard** feature for convenience.
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-project-structure)
-
-## ➤ 📂 Project Structure
+## 📂 Project Structure
 
 ```
 src/
@@ -93,13 +82,19 @@ src/
 
 ---
 
+## ⚡ Quick Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-key-learning-takeaways)
-
-## ➤ 💡 Key Learning Takeaways
+## 💡 Key Learning Takeaways
 
 * **State management:** `useState` for UI control and data storage.
 * **Side effects:** `useEffect` for reacting to dependency changes.
@@ -109,18 +104,17 @@ src/
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#-react-hook-quick-reference-table)
-
-## ➤ 📚 React Hook Quick-Reference Table
+## 📚 React Hook Quick-Reference Table
 
 | Hook            | Purpose                                             | Common Use Cases                                                 | Triggers Rerender?                    |
 | --------------- | --------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------- |
 | **useState**    | Store and update local component state              | Form inputs, toggles, counters                                   | ✅ Yes                                 |
 | **useEffect**   | Run side effects after render                       | API calls, timers, subscriptions, reacting to state/prop changes | ❌ No (unless state changes inside it) |
 | **useRef**      | Store mutable values or access DOM elements         | Focus input, store previous value, hold timer ID                 | ❌ No                                  |
-| **useCallback** | Memoize functions to avoid unnecessary re-creations | Passing handlers to child components, optimizing renders         | ❌ No                                                             |
-
+| **useCallback** | Memoize functions to avoid unnecessary re-creations | Passing handlers to child components, optimizing renders         | ❌ No                                  |
+| **useMemo**     | Memoize computed values                             | Expensive calculations, derived data                             | ❌ No                                  |
+| **useContext**  | Access global/shared state without prop drilling    | Theming, auth state                                              | ✅ Yes                                 |
+| **useReducer**  | Manage complex state logic                          | State with multiple sub-values, complex updates                  | ✅ Yes                                 |
 
 ---
 
